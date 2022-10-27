@@ -5,16 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--CSS Boot-->
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+    <!--Fim CSS Boot-->
     <!--Css-->
-    <link rel="styleshee" href="../static/style.css">
+    <link rel="stylesheet" href="../static/style.css">
     <!--Fim Css-->
-    <link rel="stylesheet" type="image/png" href="../static/img/asset-15.png">
+    <link rel="icon" type="image/png" href="../static/img/asset-15.png">
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!--Fim Do icons-->
     <title>Patrick Cohenn</title>
 </head>
 <body>
-    <h1>Olá Mundo</h1>
+    <aside id='header'>
+        <section class="profile">
+            <img src="../static/img/perfil.png" alt="Foto do Patrick">
+            <h1>Patrick Cohenn</h1>
+            <!--/*Rede social*/-->
+            <div class="social-links mt-4 text-center">
+                <a target="_blank" href="https://br.linkedin.com/in/patrickcohenn"> <!--target="_blank" serve para abrir uma pagina em branco-->
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a target="_blank" href="https://github.com/patrickcohenn">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/patrickcohenn/">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a target="_blank" href="https://twitter.com/patrickcohenn">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </div>
+            <!--/*Fim Rede social*/-->
+        </section>
+        
+        <nav id="navbar" class="nav-menu">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="bi bi-person"></i> Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="bi bi-list-check"></i> Habilidades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="bi bi-file-earmark"></i> Currículo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="bi bi-collection"></i> Portfólio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-envelope"></i> Contatos</a>
+                </li>  
+              </ul>
+        </nav>
+    </aside>
 
-    
+    <main id="main"> 
+        <section id="inicio" class="row m-0 p-0"> <!--Incio-->
+            <div class="col-md-5 d-flex justify-content-center align-items-center flex-column">
+                <h2 class="text-white text-sadow">Patrick Cohenn</h2>
+                <span id="subtitle" class="text-white text-shadow">Analista TI, Digital Influencer</span>
+            </div>
+            <div>
+                <div class="col-md-7 d-flex justify-content-end align-items-end">
+                    <i class="bi bi-arrow-down text-white pe-2 fs-2" aria-hidden="true" ></i>
+                    <a href="">Arrate para mais</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../static/bootstrap/js/bootstrap.esm.min.js"></script>
     <script src="../static/script.js"></script>
 </body>
 </html>
