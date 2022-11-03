@@ -134,7 +134,7 @@ section#inicio div#arraste a{
 i.menu-mobile {
     position: fixed;
     color: #fff;
-    background-color: #149ddd;
+    background-color: #021124;
     right: 1rem;
     top: 1rem;
     font-size: 1.5rem;
@@ -171,7 +171,7 @@ i.menu-mobile {
         font-size: 1rem;
     }
     #main{
-        margin-left: 0;
+        margin-left: 0;/*TIRANDO A MARG QUE ESTA COM 300PX*/
     }
 }
 /*--------------------------------------------Fim da menu mobile responsivo --------------------------------------------------*/
