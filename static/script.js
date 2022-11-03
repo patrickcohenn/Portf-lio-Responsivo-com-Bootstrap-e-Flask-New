@@ -11,3 +11,11 @@ menuMobile.addEventListener('click', () =>{
     body.classList.toggle("menu-nav-active")          /*Vai add una class a tag no body*/
 })
 
+/*Fecha o menu quando click em algum intem e mudar o icon list para x */
+/*const navItem = document.querySelectorAll('.nav-item')
+
+navItem.forEach(item => {
+    item.addEventListener("click", () =>
+    if (body.classList.contains("menu-nav-acti")))
+})
+*/

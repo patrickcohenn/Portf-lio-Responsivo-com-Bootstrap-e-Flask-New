@@ -5,6 +5,7 @@ html, body{
     width: 100%;
     height: 100%;
 }
+
 /*--------------------------------------------Inicio da tela asside nav e menu --------------------------------------------*/
 #header {
     position: fixed;
@@ -175,3 +176,25 @@ i.menu-mobile {
     }
 }
 /*--------------------------------------------Fim da menu mobile responsivo --------------------------------------------------*/
+
+/*-------------------------------------------Inicio da estilização do scroll--------------------------------------------------*/
+*::-webkit-scrollbar{
+    width: 15px;
+}
+
+*::-webkit-scrollbar-track{
+    width: 12px;
+    box-shadow: inset 0 0 .3rem #021124;
+    background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: #0a3b7c;
+}
+/*-------------------------------------------Fim da estilização do scroll--------------------------------------------------*/
+
+/*-----------------------------------------Inicio da estilização de cor body-----------------------------------------------*/
+.section-bg{
+    background-color: #bfd7f3;
+}
+/*-------------------------------------------Fim da estilização de cor body------------------------------------------------*/
