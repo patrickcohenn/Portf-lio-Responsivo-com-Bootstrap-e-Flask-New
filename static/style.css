@@ -195,6 +195,55 @@ i.menu-mobile {
 
 /*-----------------------------------------Inicio da estilização de cor body-----------------------------------------------*/
 .section-bg{
-    background-color: #bfd7f3;
+    background-color: #dce8f5;
 }
 /*-------------------------------------------Fim da estilização de cor body------------------------------------------------*/
+
+/*-------------------------------------------------- Inicio Curriculo ------------------------------------------------------*/
+.cv .cv-title{
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #021124;
+}
+
+.cv .cv-item{
+    padding: 0 0 20px 20px; /*Sentido horario 0 cima 0 direita 20px baixo 20px esquerda*/
+    margin-top: -2px;
+    border-left: 2px solid #149ddd;
+    position: relative;
+} 
+
+.cv .cv-item h4{
+    line-height: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: #021124;
+    margin-bottom: 10px;
+}
+
+.cv .cv-item h5{
+    background: #e4edf9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.cv .cv-item::before{ /*Add um item qualquer no elemnto item*/
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 16px;
+    height: 16px;
+    border:  2px solid #149ddd;
+    background: #ffffff;
+    border-radius: 50%;
+}
+/*----------------------------------------------------Fim do Curriculo -----------------------------------------------------*/
+
+/*-------------------------------------------------- Inicio Curriculo ------------------------------------------------------*/
+
+/*----------------------------------------------------Fim do Curriculo -----------------------------------------------------*/
