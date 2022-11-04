@@ -12,10 +12,13 @@ menuMobile.addEventListener('click', () =>{
 })
 
 /*Fecha o menu quando click em algum intem e mudar o icon list para x */
-/*const navItem = document.querySelectorAll('.nav-item')
+const navItem = document.querySelectorAll('.nav-item')
 
 navItem.forEach(item => {
-    item.addEventListener("click", () =>
-    if (body.classList.contains("menu-nav-acti")))
+    item.addEventListener("click", () => {                          /*Quando tiver um evento de click */
+        if (body.classList.contains("menu-nav-active")){            /*If vai conferir se o menu esta como ativo */
+            body.classList.remove("menu-nav-active")                /*Se estiver verdadeiro vai reomover o menu-nav-active, fechando o menu*/
+            menuMobile.classList.replace("bi-x", "bi-list");        /*no modo mobile vai trocar o icon x para lista*/
+        }
+    })
 })
-*/
