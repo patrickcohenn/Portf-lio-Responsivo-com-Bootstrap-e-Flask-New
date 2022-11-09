@@ -40,3 +40,15 @@ animeScroll()
 window.addEventListener("scroll", () => {
     animeScroll();
 })
+
+/* ------------------------------------ Botao enviar -------------------------------- */
+
+const btnEnviar = document.querySelectorAll('#btn-enviar')
+const btnEnviarLoader = document.querySelectorAll('#btn-enviar-loader')
+
+btnEnviar.addEventListener("click", () => {
+    btnEnviarLoader.style.display = 'block';
+    btnEnviar.style.display = 'none';
+})
+
+/* ------------------------------------ Botao enviar -------------------------------- */
