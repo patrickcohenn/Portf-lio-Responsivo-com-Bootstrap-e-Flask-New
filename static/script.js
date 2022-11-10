@@ -9,19 +9,19 @@ menuMobile.addEventListener('click', () =>{
     ? menuMobile.classList.replace("bi-list", 'bi-x')   /*If ternário*/
     : menuMobile.classList.replace("bi-x", "bi-list");  /*If ternário*/
     body.classList.toggle("menu-nav-active")          /*Vai add una class a tag no body*/
-})
+});
 
 /*Fecha o menu quando click em algum intem e mudar o icon list para x */
 const navItem = document.querySelectorAll('.nav-item')
 
-navItem.forEach(item => {
+navItem.forEach((item) => {
     item.addEventListener("click", () => {                          /*Quando tiver um evento de click */
         if (body.classList.contains("menu-nav-active")){            /*If vai conferir se o menu esta como ativo */
             body.classList.remove("menu-nav-active")                /*Se estiver verdadeiro vai reomover o menu-nav-active, fechando o menu*/
             menuMobile.classList.replace("bi-x", "bi-list");        /*no modo mobile vai trocar o icon x para lista*/
         }
-    })
-})
+    });
+});
 
 const item = document.querySelectorAll("[data-anime]");
 const animeScroll = () => {
@@ -32,23 +32,32 @@ const animeScroll = () => {
         } else{
             eLement.classList.remove("animate");
         }
-    })
-}
+    });
+};
 
-animeScroll()
+animeScroll();
 
 window.addEventListener("scroll", () => {
     animeScroll();
-})
+});
 
 /* ------------------------------------ Botao enviar -------------------------------- */
 
-const btnEnviar = document.querySelectorAll('#btn-enviar')
-const btnEnviarLoader = document.querySelectorAll('#btn-enviar-loader')
+const btnEnviar = document.querySelector('#btn-enviar')
+const btnEnviarLoader = document.querySelector('#btn-enviar-loader')
 
 btnEnviar.addEventListener("click", () => {
     btnEnviarLoader.style.display = 'block';
     btnEnviar.style.display = 'none';
-})
+});
 
 /* ------------------------------------ Botao enviar -------------------------------- */
+
+/*-------------------------------------------------- Inicio Alerta ------------------------------------------------------*/
+setTimeout(() => {
+        document.querySelector('#alerta')
+        .style.display = 'none'
+    },
+    10000 /*10s*/
+);
+/*-------------------------------------------------- Fim Alerta ------------------------------------------------------*/
