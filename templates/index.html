@@ -31,17 +31,17 @@
             <h1>Patrick Cohenn</h1>
             <!--/*Rede social*/-->
             <div class="social-links mt-4 text-center">
-                <a target="_blank" href="https://br.linkedin.com/in/patrickcohenn">
+                <a target="_blank" href="https://br.linkedin.com/in/patrickcohenn" class="icon icon--linkedin">
                     <!--target="_blank" serve para abrir uma pagina em branco-->
                     <i class="bi bi-linkedin"></i>
                 </a>
-                <a target="_blank" href="https://github.com/patrickcohenn">
+                <a target="_blank" href="https://github.com/patrickcohenn" class="icon icon--github">
                     <i class="bi bi-github"></i>
                 </a>
-                <a target="_blank" href="https://www.instagram.com/patrickcohenn/">
+                <a target="_blank" href="https://www.instagram.com/patrickcohenn/" class="icon icon--instagram">
                     <i class="bi bi-instagram"></i>
                 </a>
-                <a target="_blank" href="https://twitter.com/patrickcohenn">
+                <a target="_blank" href="https://twitter.com/patrickcohenn" class="icon icon--twitter">
                     <i class="bi bi-twitter"></i>
                 </a>
             </div>
@@ -81,9 +81,9 @@
                 <span id="subtitle" class="text-white text-shadow">Analista TI, Digital Influencer</span>
             </div>
             <div class="col-md-7 d-flex justify-content-end align-items-end">
-                <div id="arraste" class="d-flwx align-items-end">
-                    <i class="bi bi-arrow-down text-white pe-2 fs-2" aria-hidden="true"></i>
-                    <a href="#sobre">Arrate para mais</a>
+                <div id="arraste" class="d-flwx align-items-end row">
+                    <a href="#sobre" class="col-4"><i href="#sobre"class="bi bi-arrow-down text-white pe-2 fs-2" aria-hidden="true"></i></a>
+                    <a href="#sobre" class="col-8">Arrate para mais</a>
                 </div>
             </div>
         </section>  
@@ -779,7 +779,13 @@
             </div>
         </section>
         <!-- -------------------------------------------------------- Fim Contato ---------------------------------------------------------- -->
-
+        <!-- -------------------------------------------------------- Incio Insta ---------------------------------------------------------- -->
+        <section class="section-bg" style="display:none">
+            <!-- LightWidget WIDGET -->
+            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+            <iframe src="//lightwidget.com/widgets/eef051c2e3ed5272a46ac08ab5716877.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+        </section>
+        <!-- -------------------------------------------------------- Fim do insta---------------------------------------------------------- -->
         <!-- -------------------------------------------------------- Incio Alerta ---------------------------------------------------------- -->
         <section>
             {% with messages = get_flashed_messages() %}

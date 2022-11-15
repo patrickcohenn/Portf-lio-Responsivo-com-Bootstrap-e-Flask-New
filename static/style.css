@@ -28,8 +28,14 @@ body {
     margin: 15px auto;
     display: block;
     width: 120px;
-    border: 8px solid rgb(0, 119, 255);
+    border: 5px solid #0077ff;
     border-radius: 50%;
+}
+
+#header .profile img:hover{
+    background: linear-gradient(to right, #0077ff, #1b62d0,#1b62d0, #0077ff) border-box;
+    border-radius: 50%;
+    border: 5px solid transparent;
 }
 
 #header .profile h1 {
@@ -42,19 +48,65 @@ body {
 }
 
 #header .profile .social-links a {
+    width: 35px;
+    height: 35px;
     font-size: 1rem;
     background: #212431;
     color: #fff;
     padding: 0.6rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     border-radius: 50%;
-    transition: 0.3s;
-    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition-property:    
+        outline-offser, 
+        outline-color, 
+        background-color;
+    transition-duration: .25s;
 }
 
-#header .profile .social-links a:hover {
-    background: #149ddd;
+.icon:hover i {
+    animation:shake .25s;
 }
+
+
+#header 
+.profile 
+.social-links 
+.icon--instagram:hover{
+    background-image:   
+        radial-gradient(
+            circle at 30% 107%,
+            #fdf497 0%, #fdf497 5%,
+            #fd5949 45%, #d6249f 60%,
+            #285aeb 90%                                
+        );
+        outline-color: #a02d76;
+}
+#header 
+.profile 
+.social-links 
+.icon--linkedin:hover{
+    background-color: #0077b5;
+    outline-color: #0077b5;
+}
+
+#header 
+.profile 
+.social-links 
+.icon--github:hover{
+    background-color: #4b047e;
+    outline-color: #036c03;
+}
+
+#header 
+.profile 
+.social-links 
+.icon--twitter:hover{
+    background-color: #1da1f2;
+    outline-color: #1da1f2;
+}
+
 
 .nav-menu {
     padding: 1.5rem;
@@ -91,6 +143,12 @@ body {
     color: #149ddd;
 }
 
+@keyframes shake{
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
+}
 /*--------------------------------------------Fim  da tela asside nav e menu --------------------------------------------*/
 
 /*--------------------------------------------Inicio da tela de Inicio --------------------------------------------------*/
