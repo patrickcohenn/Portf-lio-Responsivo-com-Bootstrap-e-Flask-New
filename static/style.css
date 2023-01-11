@@ -132,7 +132,11 @@ body {
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+    border-radius: 25px;
 }
 
 .nav-menu a:hover i,
@@ -140,6 +144,7 @@ body {
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
     color: #149ddd;
+    
 }
 
 @keyframes shake{
@@ -193,6 +198,12 @@ section#inicio div#arraste a {
     color: #fff;
 }
 
+.glass{
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+    border-radius: 25px;
+}
 /*--------------------------------------------Fim da tela de Inicio --------------------------------------------------*/
 
 /*--------------------------------------------Inicio menu mobile responsivo --------------------------------------------------*/
@@ -363,7 +374,15 @@ i.menu-mobile {
     transform: translate3d(0, 0, 0);
 }
 
+
 /*----------------------------------------------------Fim da Animação -----------------------------------------------------*/
+
+/*-------------------------------------------------- Inicio Botao enviar ------------------------------------------------------*/
+#btn-enviar-loader {
+    display: none;
+}
+
+/*----------------------------------------------------Fim Botao enviar -----------------------------------------------------*/
 
 @media (max-width: 1860px) {
     .carousel-control-prev {
