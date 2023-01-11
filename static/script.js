@@ -61,3 +61,14 @@ setTimeout(() => {
     10000 /*10s*/
 );
 /*-------------------------------------------------- Fim Alerta ------------------------------------------------------*/
+
+/*-------------------------------------------------- Inicio Calc Ano ------------------------------------------------------*/
+const nowDay = new Date();
+        const birth = new Date('Oct 16 1988 00:00:00'); //Meu aniversário
+        const ageDiff = Math.abs(nowDay.getTime() - birth.getTime()); // Caluclando a idade em miles.
+        //const age = Math.ceil(ageDiff / (1000*60*60*24*365)); // Este calc ira mostrar o resultado em anos. Arredondamento para cima. 
+        const age = Math.trunc(ageDiff/(1000*60*60*24*365)); // Este calc ira mostrar o resultado em anos, Somente a parte interira. 
+        idade.innerHTML = age +" anos"; // Colcoar o valor da constante no site onde tem o id = #idade
+        //document.getElementById("idade").innerHTML = '<strong>Eu tenho </strong> ${age} anos'
+/*-------------------------------------------------- Fim Calc Ano ------------------------------------------------------*/
+

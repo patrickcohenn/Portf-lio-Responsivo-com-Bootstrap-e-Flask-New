@@ -69,7 +69,6 @@ body {
     animation:shake .25s;
 }
 
-
 #header 
 .profile 
 .social-links 
@@ -250,7 +249,7 @@ i.menu-mobile {
 
 /*-------------------------------------------Inicio da estilização do scroll--------------------------------------------------*/
 *::-webkit-scrollbar {
-    width: 10px;
+    width: 12px;
 }
 
 *::-webkit-scrollbar-track {
@@ -261,6 +260,7 @@ i.menu-mobile {
 
 *::-webkit-scrollbar-thumb {
     background-color: #0a3b7c;
+    border-radius: 3px;
 }
 
 /*-------------------------------------------Fim da estilização do scroll--------------------------------------------------*/
