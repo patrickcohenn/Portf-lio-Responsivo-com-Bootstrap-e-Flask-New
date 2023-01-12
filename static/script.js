@@ -47,8 +47,8 @@ const btnEnviar = document.querySelector('#btn-enviar')
 const btnEnviarLoader = document.querySelector('#btn-enviar-loader')
 
 btnEnviar.addEventListener("click", () => {
-    btnEnviarLoader.style.display = 'block';
-    btnEnviar.style.display = 'none';
+btnEnviarLoader.style.display = 'block';
+btnEnviar.style.display = 'none';
 });
 
 /* ------------------------------------ Botao enviar -------------------------------- */
@@ -64,11 +64,38 @@ setTimeout(() => {
 
 /*-------------------------------------------------- Inicio Calc Ano ------------------------------------------------------*/
 const nowDay = new Date();
-        const birth = new Date('Oct 16 1988 00:00:00'); //Meu aniversário
-        const ageDiff = Math.abs(nowDay.getTime() - birth.getTime()); // Caluclando a idade em miles.
-        //const age = Math.ceil(ageDiff / (1000*60*60*24*365)); // Este calc ira mostrar o resultado em anos. Arredondamento para cima. 
-        const age = Math.trunc(ageDiff/(1000*60*60*24*365)); // Este calc ira mostrar o resultado em anos, Somente a parte interira. 
-        idade.innerHTML = age +" anos"; // Colcoar o valor da constante no site onde tem o id = #idade
-        //document.getElementById("idade").innerHTML = '<strong>Eu tenho </strong> ${age} anos'
+const birth = new Date('Oct 16 1988 00:00:00'); //Meu aniversário
+const ageDiff = Math.abs(nowDay.getTime() - birth.getTime()); // Caluclando a idade em miles.
+//const age = Math.ceil(ageDiff / (1000*60*60*24*365)); // Este calc ira mostrar o resultado em anos. Arredondamento para cima. 
+const age = Math.trunc(ageDiff/(1000*60*60*24*365)); // Este calc ira mostrar o resultado em anos, Somente a parte interira. 
+idade.innerHTML = age +" anos"; // Colcoar o valor da constante no site onde tem o id = #idade
+//document.getElementById("idade").innerHTML = '<strong>Eu tenho </strong> ${age} anos'
 /*-------------------------------------------------- Fim Calc Ano ------------------------------------------------------*/
 
+
+let theme = localStorage.getItem('data-theme');
+const checkbox = document.getElementById("switch");
+const changeThemeToDark = () =>{
+    document.documentElement.setAttribute("data-theme", "dark")
+    localStorage.setItem("data-theme", "dark")
+    console.log("I give you dark")
+}
+
+const changeThemeToLight = () =>{
+    document.documentElement.setAttribute("data-theme", "light")
+    localStorage.setItem("data-theme", 'light')
+    console.log("I give you light")
+}
+
+if(theme === 'dark'){
+    changeThemeToDark()
+}
+
+checkbox.addEventListener('change', ()=> {
+    let theme = localStorage.getItem('data-theme');
+    if (theme ==='dark'){
+        changeThemeToLight()
+    }else{
+        changeThemeToDark()
+    }
+});
